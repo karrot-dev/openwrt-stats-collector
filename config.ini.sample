@@ -1,0 +1,15 @@
+[influxdb]
+
+host = localhost
+port = 8086
+username = {{ influxdb_user }}
+password = {{ influxdb_password }}
+database = {{ influxdb_database }}
+
+[host_dragon-k20-outside]
+ip = 192.168.178.252
+if_24 = wlan0
+
+[host_dragon-k20-1]
+ip = 192.168.178.253
+if_24 = wlan1
